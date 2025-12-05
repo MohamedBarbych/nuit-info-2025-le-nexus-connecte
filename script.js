@@ -202,6 +202,16 @@ function renderFooter() {
                         <a href="#" class="social-link" aria-label="GitHub">GH</a>
                     </div>
                 </div>
+                <div class="footer-section">
+                    <h4>L'Équipe 👥</h4>
+                    <div class="team-links">
+                        <a href="https://www.linkedin.com/in/mohamed-barbych/" target="_blank" class="team-link" aria-label="Mohamed Barbych">💼 Mohamed</a>
+                        <a href="https://www.linkedin.com/in/mouaad-elhansali/" target="_blank" class="team-link" aria-label="Mouaad Elhansali">💼 Mouaad</a>
+                        <a href="http://www.linkedin.com/in/youness-el-mourid-899b92332" target="_blank" class="team-link" aria-label="Youness El Mourid">💼 Youness</a>
+                        <a href="https://www.linkedin.com/in/reda-bouchkouch-236aa6367/" target="_blank" class="team-link" aria-label="Reda Bouchkouch">💼 Reda</a>
+                        <a href="https://www.linkedin.com/in/elmahjoub-bentaher-4a1808285/" target="_blank" class="team-link" aria-label="Elmahjoub Bentaher">💼 Elmahjoub</a>
+                    </div>
+                </div>
             </div>
             <div class="footer-divider"></div>
             <p class="footer-quote">Que la puissance absolue du code t'envahisse, te consume, et te transforme en légende !</p>

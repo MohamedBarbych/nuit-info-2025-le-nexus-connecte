@@ -226,3 +226,15 @@ Le Nexus Connecté propose une solution complète et innovante pour le défi "Fo
 L'approche Single Page Application offre une fluidité de navigation inégalée, tandis que les effets visuels cyberpunk créent une identité visuelle forte et mémorable. Le système d'adaptation dynamique des champs garantit que chaque utilisateur bénéficie d'une expérience sur mesure, correspondant exactement à ses besoins.
 
 Développé avec passion pour La Nuit de l'Info 2025.
+
+## Équipe de Développement
+
+Ce projet a été réalisé par une équipe de cinq développeurs passionnés :
+
+- **Mohamed Barbych** - [LinkedIn](https://www.linkedin.com/in/mohamed-barbych/)
+- **Mouaad Elhansali** - [LinkedIn](https://www.linkedin.com/in/mouaad-elhansali/)
+- **Youness El Mourid** - [LinkedIn](http://www.linkedin.com/in/youness-el-mourid-899b92332)
+- **Reda Bouchkouch** - [LinkedIn](https://www.linkedin.com/in/reda-bouchkouch-236aa6367/)
+- **Elmahjoub Bentaher** - [LinkedIn](https://www.linkedin.com/in/elmahjoub-bentaher-4a1808285/)
+
+La Nuit de l'Info 2025 - Le Nexus Connecté
