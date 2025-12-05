@@ -2,6 +2,10 @@
 
 Application web développée pour La Nuit de l'Info 2025 - Défi SFEIR "Formulaire Augmenté"
 
+## Déploiement
+
+🌐 **Application en ligne** : [https://le-nexus-connecte.netlify.app/](https://le-nexus-connecte.netlify.app/)
+
 ## Captures d'écran
 
 ### Page d'accueil - Hero Section
