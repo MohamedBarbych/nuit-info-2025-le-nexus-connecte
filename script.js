@@ -202,15 +202,50 @@ function renderFooter() {
                         <a href="#" class="social-link" aria-label="GitHub">GH</a>
                     </div>
                 </div>
-                <div class="footer-section">
-                    <h4>L'Équipe 👥</h4>
-                    <div class="team-links">
-                        <a href="https://www.linkedin.com/in/mohamed-barbych/" target="_blank" class="team-link" aria-label="Mohamed Barbych">💼 Mohamed</a>
-                        <a href="https://www.linkedin.com/in/mouaad-elhansali/" target="_blank" class="team-link" aria-label="Mouaad Elhansali">💼 Mouaad</a>
-                        <a href="http://www.linkedin.com/in/youness-el-mourid-899b92332" target="_blank" class="team-link" aria-label="Youness El Mourid">💼 Youness</a>
-                        <a href="https://www.linkedin.com/in/reda-bouchkouch-236aa6367/" target="_blank" class="team-link" aria-label="Reda Bouchkouch">💼 Reda</a>
-                        <a href="https://www.linkedin.com/in/elmahjoub-bentaher-4a1808285/" target="_blank" class="team-link" aria-label="Elmahjoub Bentaher">💼 Elmahjoub</a>
-                    </div>
+            </div>
+            <div class="team-section">
+                <h3 class="team-title">L'Équipe du Nexus</h3>
+                <div class="team-grid">
+                    <a href="https://www.linkedin.com/in/mohamed-barbych/" target="_blank" class="team-card" aria-label="Mohamed Barbych LinkedIn">
+                        <div class="team-icon">👨‍💻</div>
+                        <div class="team-info">
+                            <span class="team-name">Mohamed Barbych</span>
+                            <span class="team-role">Lead Developer</span>
+                        </div>
+                        <div class="team-linkedin">in</div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mouaad-elhansali/" target="_blank" class="team-card" aria-label="Mouaad Elhansali LinkedIn">
+                        <div class="team-icon">👨‍💻</div>
+                        <div class="team-info">
+                            <span class="team-name">Mouaad Elhansali</span>
+                            <span class="team-role">Full Stack Developer</span>
+                        </div>
+                        <div class="team-linkedin">in</div>
+                    </a>
+                    <a href="http://www.linkedin.com/in/youness-el-mourid-899b92332" target="_blank" class="team-card" aria-label="Youness El Mourid LinkedIn">
+                        <div class="team-icon">👨‍💻</div>
+                        <div class="team-info">
+                            <span class="team-name">Youness El Mourid</span>
+                            <span class="team-role">Frontend Developer</span>
+                        </div>
+                        <div class="team-linkedin">in</div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/reda-bouchkouch-236aa6367/" target="_blank" class="team-card" aria-label="Reda Bouchkouch LinkedIn">
+                        <div class="team-icon">👨‍💻</div>
+                        <div class="team-info">
+                            <span class="team-name">Reda Bouchkouch</span>
+                            <span class="team-role">Backend Developer</span>
+                        </div>
+                        <div class="team-linkedin">in</div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/elmahjoub-bentaher-4a1808285/" target="_blank" class="team-card" aria-label="Elmahjoub Bentaher LinkedIn">
+                        <div class="team-icon">👨‍💻</div>
+                        <div class="team-info">
+                            <span class="team-name">Elmahjoub Bentaher</span>
+                            <span class="team-role">DevOps Engineer</span>
+                        </div>
+                        <div class="team-linkedin">in</div>
+                    </a>
                 </div>
             </div>
             <div class="footer-divider"></div>
