@@ -9,27 +9,30 @@ Application web développée pour La Nuit de l'Info 2025 - Défi SFEIR "Formulai
 ## Captures d'écran
 
 ### Page d'accueil - Hero Section
-![Hero Section avec Avatar 3D Axolotl]
+<img width="1904" height="943" alt="image" src="https://github.com/user-attachments/assets/cabc32e9-af6d-46d7-9b0f-3e022e7c8c31" />
+
 L'interface d'accueil présente un avatar interactif en 3D dont les yeux suivent le curseur de l'utilisateur. L'ensemble adopte une esthétique cyberpunk avec des effets de particules flottantes et des animations de lumière néon cyan.
 
 ### Portail d'Intention - Sélection de Mission
-![Formulaire de sélection de mission]
+<img width="1904" height="937" alt="image" src="https://github.com/user-attachments/assets/69c23082-b645-4f12-9595-dc6ad2c89a4e" />
 Quatre options de mission sont proposées à l'utilisateur sous forme de boutons radio stylisés avec des descriptions contextuelles. Chaque mission déclenche l'affichage de champs de formulaire spécifiques.
 
 ### Champs Dynamiques - Adaptation Contextuelle
-![Champs de formulaire adaptatifs]
+<img width="1899" height="940" alt="image" src="https://github.com/user-attachments/assets/ba6310bc-9c98-43d2-8ebf-378d72837fef" />
 En fonction de la mission sélectionnée (Contact, Don, Guilde, Informations), les champs du formulaire s'adaptent automatiquement pour collecter les informations pertinentes.
 
 ### Section Année 2025 - Filtre Temporel
-![Intégration du thème 2025]
+<img width="1909" height="938" alt="image" src="https://github.com/user-attachments/assets/1e0564e3-6f50-4072-af0a-a767121eb732" />
 Une section dédiée met en avant l'année en cours avec des objectifs annuels et des animations visuelles thématiques (vagues temporelles animées).
 
 ### Page de Confirmation - Écho Personnalisé
-![Message de confirmation personnalisé]
+<img width="1907" height="955" alt="image" src="https://github.com/user-attachments/assets/199f951c-731f-411c-a9b4-2b31ad940432" />
 Après soumission, l'utilisateur est redirigé vers une page de confirmation qui affiche un message personnalisé en fonction de sa mission, incluant son nom et des références à l'année 2025.
 
 ### Navigation SPA - Transitions 3D
-![Animation de transition entre vues]
+<img width="1899" height="937" alt="image" src="https://github.com/user-attachments/assets/df4647dd-5504-4c42-ad1d-79e25b229cba" />
+
+<img width="1911" height="936" alt="image" src="https://github.com/user-attachments/assets/7049e6c4-a3c7-4631-a489-da439bec4774" />
 Le système de Single Page Application permet des transitions fluides avec rotations 3D et effets de particules lors du changement de vue.
 
 ## Description du Projet
