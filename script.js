@@ -4,14 +4,50 @@ const SPA = {
     transitions: {
         duration: 700,
         easing: 'cubic-bezier(0.68, -0.55, 0.265, 1.55)'
+    },
+    sounds: {
+        hover: null,
+        click: null
     }
 };
+function initSoundEffects() {
+    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    SPA.sounds.playHover = function() {
+        const now = audioContext.currentTime;
+        const osc = audioContext.createOscillator();
+        const gain = audioContext.createGain();
+        osc.connect(gain);
+        gain.connect(audioContext.destination);
+        osc.frequency.value = 800;
+        gain.gain.setValueAtTime(0.05, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.1);
+        osc.start(now);
+        osc.stop(now + 0.1);
+    };
+    SPA.sounds.playClick = function() {
+        const now = audioContext.currentTime;
+        const osc = audioContext.createOscillator();
+        const gain = audioContext.createGain();
+        osc.connect(gain);
+        gain.connect(audioContext.destination);
+        osc.frequency.value = 600;
+        gain.gain.setValueAtTime(0.08, now);
+        gain.gain.exponentialRampToValueAtTime(0.01, now + 0.15);
+        osc.start(now);
+        osc.stop(now + 0.15);
+    };
+}
 const VIEWS = {
     home: {
         title: 'Le Nexus Connecté - L\'Écho Personnalisé',
         render: () => `
             <div class="nexus-container view-home">
                 <header class="nexus-header">
+                    <div class="sfeir-logo-container">
+                        <img src="sfeir-logo.png" alt="SFEIR Logo" class="sfeir-logo" />
+                        <span class="logo-separator">×</span>
+                        <span class="nuit-info-badge">La Nuit de l'Info 2025</span>
+                    </div>
                     <div class="header-decoration top"></div>
                     <div class="header-decoration bottom"></div>
                     <h1 class="nexus-title" data-text="Le Nexus Connecté">Le Nexus Connecté</h1>
@@ -532,10 +568,22 @@ function initCustomCursor() {
         trail.style.top = e.clientY + 'px';
     });
     setTimeout(() => {
-        const interactiveElements = document.querySelectorAll('input, button, a, label');
+        const interactiveElements = document.querySelectorAll('input, button, a, label, .radio-option, .team-card');
         interactiveElements.forEach(el => {
-            el.addEventListener('mouseenter', () => cursor.classList.add('active'));
+            el.addEventListener('mouseenter', () => {
+                cursor.classList.add('active');
+                if (SPA.sounds.playHover) {
+                    SPA.sounds.playHover();
+                }
+            });
             el.addEventListener('mouseleave', () => cursor.classList.remove('active'));
+            if (el.tagName === 'BUTTON' || el.classList.contains('team-card')) {
+                el.addEventListener('click', () => {
+                    if (SPA.sounds.playClick) {
+                        SPA.sounds.playClick();
+                    }
+                });
+            }
         });
     }, 100);
 }
@@ -799,6 +847,7 @@ document.addEventListener('DOMContentLoaded', function() {
             view.onMount();
         }
         initCustomCursor();
+        initSoundEffects();
     }, 50);
     SPA.currentView = initialView;
     console.log('Application SPA initialisée - Vue courante:', initialView);

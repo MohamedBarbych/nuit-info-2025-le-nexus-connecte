@@ -365,6 +365,58 @@ body::after {
     0% { transform: translateX(-100%); }
     100% { transform: translateX(100%); }
 }
+.sfeir-logo-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: linear-gradient(135deg, rgba(0, 20, 40, 0.95), rgba(0, 40, 80, 0.9));
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    box-shadow: 
+        0 10px 40px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(0, 255, 255, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    animation: logoFloat 6s ease-in-out infinite;
+}
+@keyframes logoFloat {
+    0%, 100% { transform: translateX(-50%) translateY(0px); }
+    50% { transform: translateX(-50%) translateY(-10px); }
+}
+.sfeir-logo {
+    height: 40px;
+    width: auto;
+    filter: brightness(1.2) drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+    transition: all var(--transition-base);
+}
+.sfeir-logo-container:hover .sfeir-logo {
+    filter: brightness(1.5) drop-shadow(0 0 20px rgba(0, 255, 255, 0.6));
+    transform: scale(1.05);
+}
+.logo-separator {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    font-weight: 300;
+    opacity: 0.7;
+}
+.nuit-info-badge {
+    font-family: var(--font-cyber);
+    font-size: 0.9rem;
+    color: var(--text-bright);
+    letter-spacing: 1px;
+    padding: var(--spacing-xs) var(--spacing-md);
+    background: linear-gradient(90deg, var(--color-primary), var(--color-electric));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
 .avatar-rings {
     position: absolute;
     top: 50%;
@@ -2022,6 +2074,27 @@ legend {
     color: var(--text-dim);
     font-size: 0.9rem;
     font-family: var(--font-matrix);
+}
+@media (max-width: 767px) {
+    .sfeir-logo-container {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+        padding: var(--spacing-xs) var(--spacing-md);
+        top: 10px;
+    }
+    .sfeir-logo {
+        height: 30px;
+    }
+    .logo-separator {
+        display: none;
+    }
+    .nuit-info-badge {
+        font-size: 0.7rem;
+        padding: var(--spacing-xs);
+    }
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
 }
 @media (min-width: 768px) {
     .nexus-container {
